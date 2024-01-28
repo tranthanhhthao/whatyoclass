@@ -17,100 +17,133 @@
         </div>
 
         <table class="class">
-            <tr>
+            <tr class="display_score">
                 <td>SCORE</td>
                 <td id="output_score"></td>
             </tr>
 
-            <tr>
+            <tr class="display_currentSum">
                 <td>CURRENT SUM</td>
-                <td></td>
+                <td id="output_currentSum"></td>
             </tr>
 
-            <tr>
+            <tr class="display_grade">
                 <td>GRADE</td>
+                <td id="output_grade"></td>
                 <td></td>
             </tr>
 
-            <tr>
+            <tr class="display_currentTotal">
                 <td>CURRENT TOTAL</td>
-                <td></td>
+                <td id="output_currentTotal"></td>
             </tr>
         </table>
 
 
         <form id="frm1" onchange="handleClick()">
-            <input>
+            <table>
+                <tr>
+                    <th>Assignment</th>
+                    <th>Score</th>
+                    <th>Total</th>
+                </tr>
+            </table>
+
+            <input class="assignment" value="introducing me">
             <input type="number" class="score" value="200">
             <input type="number" class="total" value="200">
             <span class="percentage"></span><br>
 
-            <input>
-            <input type="number" class="score">
-            <input type="number" class="total">
-            <span class="percentage"></span><br>
-
-            <input>
-            <input type="number" class="score">
-            <input type="number" class="total">
-            <span class="percentage"></span><br>
-
-            <input>
-            <input type="number" class="score">
-            <input type="number" class="total">
-            <span class="percentage"></span><br>
-
-            <input>
-            <input type="number" class="score">
-            <input type="number" class="total">
-            <span class="percentage"></span><br>
-
-            <input>
-            <input type="number" class="score">
-            <input type="number" class="total">
-            <span class="percentage"></span><br>
-
-            <input>
-            <input type="number" class="score">
-            <input type="number" class="total">
-            <span class="percentage"></span><br>
-
-            <input>
-            <input type="number" class="score">
-            <input type="number" class="total">
-            <span class="percentage"></span><br>
-
-            <input>
-            <input type="number" class="score">
-            <input type="number" class="total">
-            <span class="percentage"></span><br>
-
-            <input>
-            <input type="number" class="score">
-            <input type="number" class="total">
-            <span class="percentage"></span><br>
-
-            <input>
-            <input type="number" class="score">
-            <input type="number" class="total">
-            <span class="percentage"></span><br>
-
-            <input>
-            <input type="number" class="score">
-            <input type="number" class="total">
-            <span class="percentage"></span><br>
-
-            <input>
+            <input class="assignment">
             <input type="number" class="score">
             <input type="number" class="total">
             <span class="percentage"></span><br>
             
+            <input class="assignment">
+            <input type="number" class="score">
+            <input type="number" class="total">
+            <span class="percentage"></span><br>
+
+            <input class="assignment">
+            <input type="number" class="score">
+            <input type="number" class="total">
+            <span class="percentage"></span><br>
+
+            <input class="assignment">
+            <input type="number" class="score">
+            <input type="number" class="total">
+            <span class="percentage"></span><br>
+
+            <input class="assignment">
+            <input type="number" class="score">
+            <input type="number" class="total">
+            <span class="percentage"></span><br>
+
+            <input class="assignment">
+            <input type="number" class="score">
+            <input type="number" class="total">
+            <span class="percentage"></span><br>
+
+            <input class="assignment">
+            <input type="number" class="score">
+            <input type="number" class="total">
+            <span class="percentage"></span><br>
+
+            <input class="assignment">
+            <input type="number" class="score">
+            <input type="number" class="total">
+            <span class="percentage"></span><br>
+
+            <input class="assignment">
+            <input type="number" class="score">
+            <input type="number" class="total">
+            <span class="percentage"></span><br>
+
+            <input class="assignment">
+            <input type="number" class="score">
+            <input type="number" class="total">
+            <span class="percentage"></span><br>
+
+            <input class="assignment">
+            <input type="number" class="score">
+            <input type="number" class="total">
+            <span class="percentage"></span><br>
+
+            <input class="assignment">
+            <input type="number" class="score">
+            <input type="number" class="total">
+            <span class="percentage"></span><br>
+
+            <input class="assignment">
+            <input type="number" class="score">
+            <input type="number" class="total">
+            <span class="percentage"></span><br>
+
+            <input class="assignment">
+            <input type="number" class="score">
+            <input type="number" class="total">
+            <span class="percentage"></span><br>
+
+            <input class="assignment">
+            <input type="number" class="score">
+            <input type="number" class="total">
+            <span class="percentage"></span><br>
+
+            <input class="assignment">
+            <input type="number" class="score">
+            <input type="number" class="total">
+            <span class="percentage"></span><br>
+
             
+                    
         </form>
 
-        <button id="submit">Submit</button>
-        <p>your average is</p>
-        <span id="output"></span>
+        <div class="buttons">
+            <button id="submit">Submit</button>
+            <button id="clear">Clear</button>
+            <button id="ex">Example</button>
+        </div>
+        
     </main>
 	<script src="app.js"></script>
   </body>
