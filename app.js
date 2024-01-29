@@ -21,7 +21,7 @@ function reload() {
     let sumCurrent = 0;
     let currentTotal = 0;
     let count = 0;
-    let average;
+    let average = 0;
 
     for (let i = 0; i < scores.length ;i++) {
 

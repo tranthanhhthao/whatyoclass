@@ -126,9 +126,12 @@ form table th:nth-child(3) {
     width: 55px;
 }
 
-input {
+#frm1 input {
     border: 1px solid #ccc;
     margin: 2px 0;
+
+    font-size: 17px;
+    padding: 2px 4px;
 }
 
 .assignment {
@@ -167,6 +170,10 @@ input {
     margin-top: 5px;
     margin-left: 20px;
     top: 40px;
+}
+
+#submit {
+    display: none;
 }
 
 /* Chrome, Safari, Edge, Opera */
