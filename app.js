@@ -4,6 +4,8 @@ const scores = document.getElementsByClassName('score');
 const totals = document.getElementsByClassName('total');
 const percentages = document.getElementsByClassName('percentage');
 
+const className = document.getElementById('classname');
+
 const pointer = document.getElementById('pointer');
 const buttonSubmit = document.getElementById('submit');
 const buttonClear = document.getElementById('clear');
@@ -79,14 +81,39 @@ function clearing() {
 }
 
 function example() {
-    asm[2].value = '245'
-    asm[3].value = 'Draft 1';
-    asm[4].value = 'Draft 2';
-    asm[5].value = 'Peer Review';
-    asm[6].value = 'Writing Project 1';
+    className.value = 'Composition I';
 
+    asm[0].value = 'Individual Contract';
+    scores[0].value = 50;
+    totals[0].value = 50;
+
+    asm[2].value = '245';
+    scores[2].value = 30;
+    totals[2].value = 30;
+
+    asm[3].value = 'Draft 1';
     scores[3].value = 0;
     totals[3].value = 30;
+
+    asm[4].value = 'Draft 2';
+    scores[4].value = 30;
+    totals[4].value = 30;
+
+    asm[5].value = 'Peer Review 1';
+    scores[5].value = 0;
+    totals[5].value = 50;
+
+    asm[6].value = 'Writing Project 1';
+    scores[6].value = 188;
+    totals[6].value = 200;
+
+    asm[8].value = 'HW';
+    totals[8].value = 50;
+    asm[9].value = 'HW';
+    totals[9].value = 50;
+    asm[10].value = 'HW';
+    totals[10].value = 50;
+
 
     reload()
 }
