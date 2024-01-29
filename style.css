@@ -1,9 +1,23 @@
+main {
+    margin-left: 20%;
+    font-family: 'Work Sans', sans-serif;
+}
+
+h1 {
+    position: relative;
+    display: block;
+
+    left: -40px;
+    color: #ccc;
+}
+
 .title p {
     margin: 0;
 }
 
 .title input {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Work Sans', sans-serif;
+
     font-size: 30px;
     font-weight: 800;
 
@@ -11,14 +25,17 @@
     color: white;
 
     width: 400px;
+
+    padding: 24px 0 8px 10px;
 }
 
 .class {
     border-collapse: collapse;
+    margin-left: 2px;
 }
 
 .class td {
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     padding: 0;
     margin: 0;
 }
@@ -28,12 +45,50 @@
 }
 
 .class tr td:nth-child(2) {
-    width: 200px;
+    width: 150px;
 }
 
-.class tr:nth-child(3) td:nth-child(3) {
-    width: 50px;
+/* grading info */
+.graph {
+    position: relative;
+    display: block;
+
 }
+
+#grading_info {
+    position: relative;
+    display: block;
+
+    width: 250px;
+
+    /* border: 1px solid #ebebeb; */
+    padding: 30px 12px 0 12px;
+}
+
+.graph #pointer {
+    position: absolute;
+    display: block;
+    
+    margin-left: 12px;
+    top: 35px;
+    left: 235px;
+
+    width: 5px;
+    height: 5px;
+    border: 3px solid black;
+}
+
+.class-info {
+    border: 1px solid #ccc;
+    width: 290px;
+
+    margin-top: 7px;
+    margin-left: 2px;
+    
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
 
 /* FORM */
 form {
@@ -98,7 +153,7 @@ input {
     position: absolute;
     display: block;
 
-    top: 300px;
+    top: 500px;
 
     height: 100px;
     width: 200px;
@@ -126,76 +181,32 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
-/* hover */
-.display_score::after {
-    content: 'sum of Score';
-    position: absolute;
-    z-index: 1;
+/* info */
 
-    visibility: hidden;
-    opacity: 0;
+.formulas {
+    position: relative;
+    display: block;
 
-    padding: 3px 3px;
-    background-color: blue;
-    color: white;
+    top: 180px;
+    margin-left: 20%;
+    left: 340px;
 }
 
-.display_score:hover:after {
-    visibility: visible;
-    opacity: 1;
+.formulas p {
+    margin: 0;
+    padding: 0;
+
+    font-size: 12px;
 }
 
-.display_currentSum::after {
-    content: 'sum of scored Total';
-    position: absolute;
-    z-index: 1;
+/* about */
 
-    visibility: hidden;
-    opacity: 0;
-
-    padding: 3px 3px;
-    background-color: blue;
-    color: white;
+#myname {
+    font-weight: 800;
+    text-decoration: underline;
+    color: black;
 }
 
-.display_currentSum:hover:after {
-    visibility: visible;
-    opacity: 1;
+.about {
+    width: 100px;
 }
-
-.display_grade::after {
-    content: 'Score / Current Sum';
-    position: absolute;
-    z-index: 1;
-
-    visibility: hidden;
-    opacity: 0;
-
-    padding: 3px 3px;
-    background-color: blue;
-    color: white;
-}
-
-.display_grade:hover:after {
-    visibility: visible;
-    opacity: 1;
-}
-
-.display_currentTotal::after {
-    content: 'sum of Total';
-    position: absolute;
-    z-index: 1;
-
-    visibility: hidden;
-    opacity: 0;
-
-    padding: 3px 3px;
-    background-color: blue;
-    color: white;
-}
-
-.display_currentTotal:hover:after {
-    visibility: visible;
-    opacity: 1;
-}
-

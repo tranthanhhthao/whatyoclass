@@ -5,42 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Get Average</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,800;0,900;1,400&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
   </head>
   <body>
     <main>
-        <h1>What's yo class?!</h1>  
+        <h1>check<br>yo<br>class</h1>  
 
         <div class="title">
             <input id="classname" value="calculus">
         </div>
 
-        <table class="class">
-            <tr class="display_score">
-                <td>SCORE</td>
-                <td id="output_score"></td>
-            </tr>
+        <div class="class-info">
+            <table class="class">
 
-            <tr class="display_currentSum">
-                <td>CURRENT SUM</td>
-                <td id="output_currentSum"></td>
-            </tr>
+                <tr class="display_score">
+                    <td>SCORE</td>
+                    <td id="output_score"></td>
+                </tr>
+    
+                <tr class="display_currentSum">
+                    <td>CURRENT SUM</td>
+                    <td id="output_currentSum"></td>
+                </tr>
+    
+                <tr class="display_grade">
+                    <td>GRADE</td>
+                    <td id="output_grade"></td>
+                </tr>
+    
+                <tr class="display_currentTotal">
+                    <td>CURRENT TOTAL</td>
+                    <td id="output_currentTotal"></td>
+                </tr>
+            </table>
+            <div class="graph">
+                <img id="grading_info" src="files/grading-info.png" alt="grading_info">
+                <div id="pointer"></div>
+            </div>
+        </div>
 
-            <tr class="display_grade">
-                <td>GRADE</td>
-                <td id="output_grade"></td>
-                <td></td>
-            </tr>
-
-            <tr class="display_currentTotal">
-                <td>CURRENT TOTAL</td>
-                <td id="output_currentTotal"></td>
-            </tr>
-        </table>
 
 
-        <form id="frm1" onchange="handleClick()">
+
+        <form id="frm1" onchange="reload()">
             <table>
                 <tr>
                     <th>Assignment</th>
@@ -134,14 +147,25 @@
             <input type="number" class="total">
             <span class="percentage"></span><br>
 
-            
-                    
         </form>
 
         <div class="buttons">
-            <button id="submit">Submit</button>
-            <button id="clear">Clear</button>
-            <button id="ex">Example</button>
+            <button id="submit" onclick="reload()">Reload</button>
+            <button id="clear" onclick="clearing()">Clear</button>
+            <button id="ex" onclick="example()">Example</button>
+        </div>
+
+
+        <!-- info -->
+        <div class="formulas">
+            <p>SCORE = sum of Score</p>
+            <p>CURRENT SUM = sum of scored Total</p>
+            <p>GRADE = SCORE / CURRENT SUM</p>
+            <p>CURRENT TOTAL = sum of Total</p>
+        </div>
+
+        <div class="about">
+            <p>this webapp helps <a id="myname" href="https://linktr.ee/tranthanhhthao" target=”_blank”>thảo</a> see how she is doing in any class.</p>
         </div>
         
     </main>
